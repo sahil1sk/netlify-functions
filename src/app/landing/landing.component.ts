@@ -20,13 +20,15 @@ export class LandingComponent {
 
     const baseUrl = window.location.origin;
     this.http.post(baseUrl + '/.netlify/functions/signup', this.form.value).subscribe(
-      (res) => {
+      (res: any) => {
         console.log("success");
         console.log(res);
+        alert(res.message);
       },
       (err) => {
         console.log("error");
         console.log(err);
+        alert(err)
       });
   }
 }
