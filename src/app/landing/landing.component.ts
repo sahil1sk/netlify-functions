@@ -28,7 +28,7 @@ export class LandingComponent {
       (err) => {
         console.log("error");
         console.log(err);
-        alert(err)
+        alert(err.error.error);
       });
   }
 }

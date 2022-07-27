@@ -14,8 +14,10 @@
 # Netlify functions package
 => npm i --save @netlify/functions
 
-# We added netlify functions
-=> netlify dev (To run the netlify functions)
+
+# We added netlify functions and to run the netlify site locally run
+# We also added netlify/functions/signup.ts file where our function we have added
+=> netlify dev (To run the netlify with functions)
 
 # netlify.toml file is used while deployment to netlify
 
@@ -35,3 +37,11 @@
 => netlify env:set AIRTABLE_KEY <your_api_key>
 => if your live site not get api key need to deploy again to get env variable
 => go inside netlify => your site => deploys => trigger deploy (by clear cache and deploy site)
+
+## Important After Deploy netlify site next time whenever you will push data to your Github it will automatically trigger another deploy for you
+=> when you go commit and push => Go to netlify => you site => Deploys => (and see in Production Deploys another build triggered)
+
+
+# Install tailwind with scss pattern
+=> npm install -D tailwindcss postcss autoprefixer
+=> npx tailwindcss init
