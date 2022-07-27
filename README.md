@@ -33,6 +33,13 @@
 => functions folder (taken from toml file just press enter)
 => Then wait for deploy (Go to netlify and see your new folder it will be deployed by this netlify CICD)
 
+# If you find build size error during build (increase the size in angular.json file to remove the error)
+{
+    "type": "initial",
+    "maximumWarning": "4mb",
+    "maximumError": "6mb"
+}
+
 # Here how we set api key in netlify
 => netlify env:set AIRTABLE_KEY <your_api_key>
 => if your live site not get api key need to deploy again to get env variable
